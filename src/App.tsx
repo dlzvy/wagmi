@@ -18,10 +18,10 @@ function AppContent() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <RainbowKitProvider theme={theme === 'dark' ? darkTheme() : lightTheme()}>
-      <div className={`min-h-screen flex items-center justify-center transition-colors duration-300 ${
-        theme === 'light' ? 'bg-white' : 'bg-black'
-      }`}>
+    <div className={`min-h-screen flex items-center justify-center transition-colors duration-300 ${
+      theme === 'light' ? 'bg-white' : 'bg-black'
+    }`}>
+      <RainbowKitProvider theme={theme === 'dark' ? darkTheme() : lightTheme()}>
         <ThemeToggle theme={theme} onToggle={toggleTheme} />
         
         <div className="text-center space-y-8">
@@ -42,8 +42,8 @@ function AppContent() {
             <ConnectButton />
           </div>
         </div>
-      </div>
-    </RainbowKitProvider>
+      </RainbowKitProvider>
+    </div>
   );
 }
 
