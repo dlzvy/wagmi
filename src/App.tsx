@@ -16,15 +16,18 @@ function App() {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider theme={darkTheme()}>
-          <div className="min-h-screen bg-gray-900 flex flex-col items-center justify-center p-4">
+          <div className="min-h-screen bg-gray-900 flex flex-col items-center justify-center p-4 font-sans">
             <div className="max-w-md w-full space-y-8">
               <div className="text-center">
-                <h2 className="mt-6 text-3xl font-extrabold text-white">
+                <h2 className="mt-6 text-3xl font-bold text-white tracking-tight">
                   Connect Your Wallet
                 </h2>
-                <p className="mt-2 text-sm text-gray-400">
+                <p className="mt-2 text-sm text-gray-400 font-medium">
                   Get started by connecting your preferred wallet
                 </p>
+                <div className="mt-4 text-xs text-gray-500 font-mono">
+                  Supports 10+ networks including Ethereum, BSC, Polygon, Arbitrum & more
+                </div>
               </div>
               <div className="mt-8 flex justify-center">
                 <ConnectButton />
