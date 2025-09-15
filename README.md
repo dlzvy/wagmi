@@ -2,7 +2,7 @@
 
 ## Quick Start
 
-### Jalankan Dev Server
+### Install
 ```bash
 vite
 ```
