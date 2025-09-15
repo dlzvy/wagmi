@@ -25,8 +25,8 @@ An open source template for Web3 wallet integration using Wagmi, RainbowKit, and
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
-cd wagmi-wallet-integration
+git clone https://github.com/dlzvy/wagmi.git
+cd wagmi
 
 # Install dependencies
 npm install
