@@ -24,7 +24,7 @@ function AppContent() {
       <RainbowKitProvider theme={theme === 'dark' ? darkTheme() : lightTheme()}>
         <ThemeToggle theme={theme} onToggle={toggleTheme} />
         
-        <div className="text-center space-y-8">
+        <div className="text-center space-y-8 px-4">
           <div className="space-y-4">
             <h1 className={`text-5xl font-bold tracking-tight transition-colors duration-300 ${
               theme === 'light' ? 'text-black' : 'text-white'
