@@ -11,7 +11,7 @@ export function ThemeToggle({ theme, onToggle }: ThemeToggleProps) {
   return (
     <button
       onClick={onToggle}
-      className={`fixed top-6 right-6 p-3 rounded-full transition-all duration-300 hover:scale-110 ${
+      className={`fixed top-6 right-6 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg z-50 ${
         theme === 'light'
           ? 'bg-gray-900 text-white hover:bg-gray-800'
           : 'bg-white text-gray-900 hover:bg-gray-100'
