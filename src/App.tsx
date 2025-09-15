@@ -16,15 +16,17 @@ function App() {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider theme={darkTheme()}>
-          <div className="min-h-screen bg-black flex items-center justify-center p-4 font-sans">
-            <div className="text-center space-y-6">
-              <h1 className="text-4xl font-bold text-white tracking-tight">
-                Connect Your Wallet
-              </h1>
-              <p className="text-lg text-gray-300 font-medium">
-                Get started by connecting your preferred wallet
-              </p>
-              <div className="pt-4">
+          <div className="min-h-screen bg-black flex items-center justify-center">
+            <div className="text-center space-y-8">
+              <div className="space-y-4">
+                <h1 className="text-5xl font-bold text-white tracking-tight">
+                  Connect Your Wallet
+                </h1>
+                <p className="text-xl text-gray-400 font-medium">
+                  Get started by connecting your preferred wallet
+                </p>
+              </div>
+              <div className="flex justify-center">
                 <ConnectButton />
               </div>
             </div>
