@@ -18,28 +18,31 @@ function AppContent() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className={`min-h-screen flex items-center justify-center transition-colors duration-300 ${
+    <div className={`w-full h-full relative transition-colors duration-300 ${
       theme === 'light' ? 'bg-white' : 'bg-black'
     }`}>
       <RainbowKitProvider theme={theme === 'dark' ? darkTheme() : lightTheme()}>
         <ThemeToggle theme={theme} onToggle={toggleTheme} />
         
-        <div className="text-center space-y-8">
-          <div className="space-y-4">
-            <h1 className={`text-5xl font-bold tracking-tight transition-colors duration-300 ${
-              theme === 'light' ? 'text-black' : 'text-white'
-            }`}>
-              Connect Your Wallet
-            </h1>
-            <p className={`text-xl font-medium transition-colors duration-300 ${
-              theme === 'light' ? 'text-gray-600' : 'text-gray-400'
-            }`}>
-              Get started by connecting your preferred wallet
-            </p>
-          </div>
-          
-          <div className="flex justify-center">
-            <ConnectButton />
+        {/* Main content container - absolutely centered */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center space-y-8">
+            <div className="space-y-4">
+              <h1 className={`text-5xl font-bold tracking-tight transition-colors duration-300 ${
+                theme === 'light' ? 'text-black' : 'text-white'
+              }`}>
+                Connect Your Wallet
+              </h1>
+              <p className={`text-xl font-medium transition-colors duration-300 ${
+                theme === 'light' ? 'text-gray-600' : 'text-gray-400'
+              }`}>
+                Get started by connecting your preferred wallet
+              </p>
+            </div>
+            
+            <div className="flex justify-center">
+              <ConnectButton />
+            </div>
           </div>
         </div>
       </RainbowKitProvider>
