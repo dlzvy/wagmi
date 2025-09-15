@@ -1,17 +1,17 @@
-# 🚀 Wagmi Wallet Integration - Open Source
+# Wagmi Wallet Integration - Open Source
 
-Sebuah template open source untuk integrasi wallet Web3 menggunakan Wagmi, RainbowKit, dan React + TypeScript. Project ini bebas digunakan oleh developer manapun untuk membangun aplikasi Web3.
+An open source template for Web3 wallet integration using Wagmi, RainbowKit, and React + TypeScript. This project is free to use by any developer to build Web3 applications.
 
-## ✨ Features
+## Features
 
-- 🔗 **Multi-Wallet Support** - Mendukung berbagai wallet populer (MetaMask, WalletConnect, Coinbase, dll)
-- 🌐 **Multi-Chain** - Support untuk Ethereum, Polygon, Arbitrum, Optimism, BSC, dan banyak lagi
-- 🎨 **Theme Toggle** - Light/Dark mode dengan smooth transitions
-- 📱 **Responsive Design** - Bekerja sempurna di desktop dan mobile
-- 💾 **Auto Save Theme** - Theme preference tersimpan di localStorage
-- ⚡ **Modern Stack** - React 18, TypeScript, Vite, Tailwind CSS
+- Multi-Wallet Support - Supports various popular wallets (MetaMask, WalletConnect, Coinbase, etc)
+- Multi-Chain - Support for Ethereum, Polygon, Arbitrum, Optimism, BSC, and many more
+- Theme Toggle - Light/Dark mode with smooth transitions
+- Responsive Design - Works perfectly on desktop and mobile
+- Auto Save Theme - Theme preference saved in localStorage
+- Modern Stack - React 18, TypeScript, Vite, Tailwind CSS
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React 18 + TypeScript
 - **Build Tool**: Vite
@@ -21,7 +21,7 @@ Sebuah template open source untuk integrasi wallet Web3 menggunakan Wagmi, Rainb
 - **Icons**: Lucide React
 - **Fonts**: Inter + JetBrains Mono
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Clone repository
@@ -41,7 +41,7 @@ npm run build
 npm run preview
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -62,16 +62,16 @@ src/
 └── index.css            # Global styles
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### 1. Setup WalletConnect Project ID
 
-Edit `src/wagmi.ts` dan ganti `YOUR_PROJECT_ID` dengan project ID dari [WalletConnect Cloud](https://cloud.walletconnect.com):
+Edit `src/wagmi.ts` and replace `YOUR_PROJECT_ID` with your project ID from [WalletConnect Cloud](https://cloud.walletconnect.com):
 
 ```typescript
 export const config = getDefaultConfig({
   appName: 'Your App Name',
-  projectId: 'YOUR_ACTUAL_PROJECT_ID', // Ganti ini
+  projectId: 'YOUR_ACTUAL_PROJECT_ID', // Replace this
   chains: allChains,
   ssr: false,
 })
@@ -79,41 +79,41 @@ export const config = getDefaultConfig({
 
 ### 2. Customize Supported Chains
 
-Edit file di `src/config/chains/` untuk menambah/mengurangi blockchain yang didukung:
+Edit files in `src/config/chains/` to add/remove supported blockchains:
 
 - `ethereum.ts` - Ethereum mainnet
-- `layer2.ts` - Layer 2 networks (Polygon, Arbitrum, dll)
-- `alternative.ts` - Alternative chains (BSC, Avalanche, dll)  
+- `layer2.ts` - Layer 2 networks (Polygon, Arbitrum, etc)
+- `alternative.ts` - Alternative chains (BSC, Avalanche, etc)  
 - `testnet.ts` - Test networks
 
 ### 3. Customize Styling
 
-- Edit `tailwind.config.js` untuk custom theme
-- Modify `src/index.css` untuk global styles
-- Update component styles di masing-masing file
+- Edit `tailwind.config.js` for custom theme
+- Modify `src/index.css` for global styles
+- Update component styles in respective files
 
-## 🎨 Theme System
+## Theme System
 
-Project ini menggunakan sistem tema yang fleksibel:
+This project uses a flexible theme system:
 
 ```typescript
-// Hook untuk theme management
+// Hook for theme management
 const { theme, toggleTheme } = useTheme();
 
-// Theme otomatis tersimpan di localStorage
-// Mendukung 'light' dan 'dark' mode
+// Theme automatically saved in localStorage
+// Supports 'light' and 'dark' mode
 ```
 
-## 🔗 Supported Wallets
+## Supported Wallets
 
 - MetaMask
 - WalletConnect
 - Coinbase Wallet
 - Rainbow Wallet
 - Trust Wallet
-- Dan banyak lagi via RainbowKit
+- And many more via RainbowKit
 
-## 🌐 Supported Networks
+## Supported Networks
 
 ### Mainnet
 - Ethereum
@@ -130,21 +130,21 @@ const { theme, toggleTheme } = useTheme();
 - Goerli
 - Mumbai
 
-## 📝 License
+## License
 
-**MIT License** - Bebas digunakan untuk project komersial maupun non-komersial.
+**MIT License** - Free to use for commercial and non-commercial projects.
 
-## 🤝 Contributing
+## Contributing
 
-Kontribusi sangat diterima! Silakan:
+Contributions are welcome! Please:
 
-1. Fork repository ini
-2. Buat feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit perubahan (`git commit -m 'Add amazing feature'`)
-4. Push ke branch (`git push origin feature/amazing-feature`)
-5. Buat Pull Request
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Create a Pull Request
 
-## 💡 Usage Examples
+## Usage Examples
 
 ### Basic Wallet Connection
 ```typescript
@@ -174,17 +174,17 @@ function MyComponent() {
 }
 ```
 
-## 🆘 Support
+## Support
 
-Jika ada pertanyaan atau butuh bantuan:
+If you have questions or need help:
 
-1. Buka issue di GitHub repository
-2. Check dokumentasi [Wagmi](https://wagmi.sh) dan [RainbowKit](https://rainbowkit.com)
-3. Join komunitas Web3 developer
+1. Open an issue on GitHub repository
+2. Check documentation for [Wagmi](https://wagmi.sh) and [RainbowKit](https://rainbowkit.com)
+3. Join Web3 developer communities
 
-## 🙏 Credits
+## Credits
 
-Dibuat dengan ❤️ menggunakan:
+Built with:
 - [Wagmi](https://wagmi.sh) - React Hooks for Ethereum
 - [RainbowKit](https://rainbowkit.com) - Best wallet connection experience
 - [Vite](https://vitejs.dev) - Next generation frontend tooling
@@ -192,6 +192,6 @@ Dibuat dengan ❤️ menggunakan:
 
 ---
 
-**Happy Coding! 🚀**
+**Happy Coding!**
 
-*Feel free to star ⭐ this repository if it helps your project!*
+*Feel free to star this repository if it helps your project!*
