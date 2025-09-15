@@ -25,11 +25,8 @@ function App() {
                 <p className="mt-2 text-sm text-gray-400 font-medium">
                   Get started by connecting your preferred wallet
                 </p>
-                <div className="mt-4 text-xs text-gray-500 font-mono">
-                  Supports 10+ networks including Ethereum, BSC, Polygon, Arbitrum & more
-                </div>
               </div>
-              <div className="mt-8 flex justify-center">
+              <div className="flex justify-center">
                 <ConnectButton />
               </div>
             </div>
